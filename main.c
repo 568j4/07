@@ -5,14 +5,18 @@
 
 int main(int argc, char *argv[]) {
 	
-	int i;
+	int i=10;
+	printf("Before function call i=%d\n", i);
+	inc(i);
+	printf("After function call i=%d\n", i);
 	
-	for (i=0;i<5;i++)
-	{
-		int temp=1;
-		printf("temp=%d\n", temp);
-		temp++;
-	}
-	
+	system("PAUSE");
 	return 0;
+}
+	
+	
+int inc(int counter)
+{
+	counter++;
+	return counter;
 }
