@@ -4,7 +4,7 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 #include <stdio.h>
-int all_files;
+static int all_files;
 extern void sub();
 int main(void)
 {
